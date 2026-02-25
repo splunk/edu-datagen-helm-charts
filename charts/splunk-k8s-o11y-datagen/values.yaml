@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 clicker:
-  replicas: 2
+  replicas: 0
 
 replicaCount: 1
 
