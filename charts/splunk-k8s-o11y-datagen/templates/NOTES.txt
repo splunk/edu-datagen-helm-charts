@@ -1,12 +1,11 @@
 
 Splunk workloads deployed to augment datagen.  The following workloads were created:
-    - frontendclicker deployment: Simulates frontend activity for opentelemetry-demo
+
     - stress-ng-deployment:       Simulates CPU-heavy workloads with some randomness
     - nginx-oom-deployment:       Regularly violates memory limits set so pods will be killed
     - cleanup-failed-pods:        A cronjob to delete failed pods more than 30 minutes old
 
 
-Your class environment has been deployed to Kubernetes. You may run the following command to
-ensure that everything loaded.
-    kubectl get pods -l app.kubernetes.io/instance=splunk-datagens
+Your class environment has been deployed to Kubernetes. You may run the following command to ensure that everything loaded.
+kubectl get pods -l app.kubernetes.io/instance=splunk-datagens
 
