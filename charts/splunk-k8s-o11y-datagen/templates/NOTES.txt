@@ -1,11 +1,13 @@
 
-Splunk workloads deployed to augment datagen.  The following workloads were created:
+Splunk workloads deployed to augment datagen. The following workloads were created:
 
-    - stress-ng-deployment:       Simulates CPU-heavy workloads with some randomness
-    - nginx-oom-deployment:       Regularly violates memory limits set so pods will be killed
-    - cleanup-failed-pods:        A cronjob to delete failed pods more than 30 minutes old
+    - httpd-deployment:        Simulates deployment with corupted image (ImagePullBackOff)
+    - mysql:                   Just MySQL Database
+    - nginx-oom-deployment:    Regularly violates memory limits set so pods will be killed
+    - patch-manage:            Logs "no pods to patch" until it detects a specific disktype label on that node
+    - cleanup-failed-pods:     A cronjob to delete failed pods more than 30 minutes old
+    - stress-ng-deployment:    Simulates CPU-heavy workloads with some randomness
 
-
-Your class environment has been deployed to Kubernetes. You may run the following command to ensure that everything loaded.
-kubectl get pods -l app.kubernetes.io/instance=splunk-datagens
+Your class environment has been deployed to Kubernetes. You may run the following command to ensure that everything loaded:
+'kubectl get pods -l app.kubernetes.io/instance=splunk-datagens'
 
