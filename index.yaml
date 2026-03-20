@@ -3,6 +3,17 @@ entries:
   splunk-k8s-o11y-datagen:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2026-03-20T12:19:10.931684329Z"
+    description: Several workloads to generate data for the Splunk Kubernetes demo
+      and courseware
+    digest: 27f8678f3c19fab2cb302e946a6de33b2a7de65bc8738c251b0a5f2b665f4bf3
+    name: splunk-k8s-o11y-datagen
+    type: application
+    urls:
+    - https://github.com/splunk/edu-datagen-helm-charts/releases/download/splunk-k8s-o11y-datagen-0.1.31/splunk-k8s-o11y-datagen-0.1.31.tgz
+    version: 0.1.31
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2026-02-27T11:47:00.81181849Z"
     description: Several workloads to generate data for the Splunk Kubernetes demo
       and courseware
@@ -243,4 +254,4 @@ entries:
     urls:
     - https://github.com/splunk/edu-datagen-helm-charts/releases/download/splunk-k8s-o11y-datagen-0.1.5/splunk-k8s-o11y-datagen-0.1.5.tgz
     version: 0.1.5
-generated: "2026-02-27T11:47:00.811979514Z"
+generated: "2026-03-20T12:19:10.931870547Z"
