@@ -33,7 +33,7 @@ spec:
         command:
           - "bash"
           - "-c"
-          - "count=0 ; sleep 300 ; while true ; do ((count++)) ; echo INFO fallocate -l ${count}00KB /fake_file ; fallocate -l ${count}00KB /fake_file; sleep 1; done"
+          - "count=0 ; sleep 300 ; while true ; do ((count++)) ; "{\"severity\":\"INFO\",\"message\":\"fallocate -l ${count}00KB /fake_file\"}" ; fallocate -l ${count}00KB /fake_file; sleep 1; done"
         imagePullPolicy: IfNotPresent
         resources:
           requests:
