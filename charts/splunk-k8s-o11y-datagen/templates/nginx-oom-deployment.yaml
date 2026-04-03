@@ -44,8 +44,12 @@ spec:
         resources:
           requests:
             ephemeral-storage: "1Mi"
+            memory: "400Mi"
+            cpu: "150m"
           limits:
             ephemeral-storage: "1Mi"
+            memory: "500Mi"
+            cpu: "200m"
       dnsPolicy: ClusterFirst
   strategy:
     type: Recreate
